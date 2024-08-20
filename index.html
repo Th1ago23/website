@@ -18,19 +18,20 @@
         .social {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            padding: 15px 0;
+            gap: 10px;
+            padding: 10px 0;
             background: rgba(0, 0, 0, 0.7);
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 100;
+            flex-wrap: wrap;
         }
         .social a {
             color: #ffffff;
             text-decoration: none;
-            font-size: 1em;
-            padding: 10px 20px;
+            font-size: 0.8em;
+            padding: 5px 10px;
             border-radius: 8px;
             background: linear-gradient(135deg, #1844bd, #1844bd);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
@@ -42,31 +43,32 @@
         .container {
             text-align: center;
             position: relative;
-            padding: 100px 20px 60px;
+            padding: 60px 20px 40px;
         }
         .name {
-            font-size: 4em;
+            font-size: 3em;
             margin: 0;
             color: #ffffff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
         .position {
-            font-size: 1.5em;
+            font-size: 1.2em;
             color: #bbbbbb;
             margin: 10px 0 20px;
         }
         .nav {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
+            gap: 10px;
             margin-bottom: 30px;
             text-align: center;
         }
         .nav a {
             color: #ffffff;
             text-decoration: none;
-            font-size: 1.2em;
-            padding: 10px 20px;
+            font-size: 1em;
+            padding: 10px 15px;
             border-radius: 25px;
             background: linear-gradient(135deg, #1844bd, #1844bd);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -76,10 +78,10 @@
             transform: translateY(-5px);
         }
         .section {
-            padding: 60px 20px;
+            padding: 40px 20px;
             text-align: center;
             background-color: rgba(0, 0, 0, 0.3);
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
         }
@@ -90,7 +92,8 @@
             gap: 20px;
         }
         .project {
-            width: 300px;
+            width: 100%;
+            max-width: 300px;
             background-color: #222222;
             border-radius: 10px;
             overflow: hidden;
@@ -107,38 +110,94 @@
         }
         .project a {
             display: block;
-            padding: 20px;
+            padding: 15px;
             color: #ffffff;
             text-decoration: none;
-            font-size: 1.2em;
+            font-size: 1em;
             background-color: #1844bd;
             text-align: center;
         }
         .project-description {
-            padding: 15px;
-            font-size: 1em;
+            padding: 10px;
+            font-size: 0.9em;
             color: #dddddd;
         }
 
         .about-content {
             display: flex;
+            flex-direction: column;
             align-items: center;
             gap: 20px;
-            text-align: left;
+            text-align: center;
         }
 
         .profile-pic {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
 
         .about-content p {
-            font-size: 1.1em;
+            font-size: 1em;
             line-height: 1.6;
             color: #dddddd;
+        }
+
+        @media (max-width: 768px) {
+            .name {
+                font-size: 2.5em;
+            }
+            .position {
+                font-size: 1em;
+            }
+            .nav a {
+                font-size: 0.9em;
+                padding: 8px 12px;
+            }
+            .section {
+                padding: 30px 10px;
+            }
+            .project img {
+                height: 150px;
+            }
+            .project {
+                max-width: 100%;
+            }
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+            }
+            .about-content p {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .name {
+                font-size: 2em;
+            }
+            .position {
+                font-size: 0.9em;
+            }
+            .nav a {
+                font-size: 0.8em;
+                padding: 6px 10px;
+            }
+            .section {
+                padding: 20px 5px;
+            }
+            .project img {
+                height: 120px;
+            }
+            .profile-pic {
+                width: 80px;
+                height: 80px;
+            }
+            .about-content p {
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
@@ -154,8 +213,7 @@
         <h1 class="name">Thiago Peixoto</h1>
         <h2 class="position">Software Engineer</h2>
     </div>
-    
-    <!-- Seção de Projetos -->
+
     <section id="projects" class="section">
         <h2>My Projects</h2>
         <div class="projects">
@@ -171,8 +229,7 @@
             </div>
         </div>
     </section>
-    
-    <!-- Seção Sobre Mim -->
+
     <section id="about-me" class="section">
         <h2>About Me</h2>
         <img src="minha-foto.png" alt="Thiago Peixoto" class="profile-pic">
@@ -182,7 +239,6 @@
             I hope you like my site! Thanks for your time 💙</p>
     </section>
     
-    <!-- Seção de Contato -->
     <section id="contact" class="section">
         <h1>Contact</h1>
         <div class="nav">
@@ -195,14 +251,14 @@
 
     <section id="Experiences" class="section">
         <h2>Experiences</h2>
-            <div class="nav">
-                <a style="text-align:left ;"><h3>Estagiário TI</h3>. Automation development with VB<br>
-                    . Menu creation using Power Query<br>
-                    . ETL and data integration<br>
-                    . Development of solutions and optimization to improve daily reports<br>
-                    . Quality control for monitoring targets<br>
-                    . Constant communication with managers<br></a>
-            </div>
+        <div class="nav">
+            <a style="text-align:left ;"><h3>Estagiário TI</h3>. Automation development with VB<br>
+                . Menu creation using Power Query<br>
+                . ETL and data integration<br>
+                . Development of solutions and optimization to improve daily reports<br>
+                . Quality control for monitoring targets<br>
+                . Constant communication with managers<br></a>
+        </div>
         <p></p>
     </section>
 </body>
