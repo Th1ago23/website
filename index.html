@@ -220,8 +220,10 @@ body {
 
 /* Foto de perfil */
 .profile-pic {
-    width: 150px; /* Ajuste o tamanho da foto conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 150px;
+    /* Ajuste o tamanho da foto conforme necessário */
+    height: auto;
+    /* Mantém a proporção da imagem */
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -232,16 +234,21 @@ body {
     font-size: 1em;
     line-height: 1.6;
     color: #dddddd;
-    text-align: justify; /* Justifica o texto */
-    max-width: 800px; /* Ajuste a largura máxima conforme necessário */
+    text-align: justify;
+    /* Justifica o texto */
+    max-width: 800px;
+    /* Ajuste a largura máxima conforme necessário */
 }
 
 /* Grid de habilidades */
 .skills-grid {
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte, se necessário */
-    justify-content: center; /* Alinha os itens horizontalmente no centro */
-    gap: 20px; /* Espaçamento entre os itens */
+    flex-wrap: wrap;
+    /* Permite que os itens se movam para a linha seguinte, se necessário */
+    justify-content: center;
+    /* Alinha os itens horizontalmente no centro */
+    gap: 20px;
+    /* Espaçamento entre os itens */
     max-width: 1000px;
     margin: 0 auto;
     transition: transform 0.3s;
@@ -257,12 +264,18 @@ body {
     transition: background-color 0.3s, transform 0.3s;
     color: #ffffff;
     font-size: auto;
-    width: 150px; /* Define uma largura fixa para os itens */
-    height: 150px; /* Define uma altura fixa para os itens para manter a forma quadrada */
-    display: flex; /* Para alinhar o conteúdo internamente */
-    flex-direction: column; /* Alinha o conteúdo verticalmente */
-    justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
-    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+    width: 150px;
+    /* Define uma largura fixa para os itens */
+    height: 150px;
+    /* Define uma altura fixa para os itens para manter a forma quadrada */
+    display: flex;
+    /* Para alinhar o conteúdo internamente */
+    flex-direction: column;
+    /* Alinha o conteúdo verticalmente */
+    justify-content: center;
+    /* Alinha o conteúdo horizontalmente no centro */
+    align-items: center;
+    /* Alinha o conteúdo verticalmente no centro */
 }
 
 /* Estilo do hover para cartões */
@@ -270,7 +283,6 @@ body {
     background-color: #1844bd;
     transform: translateY(-5px);
 }
-
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -308,8 +320,8 @@ body {
     }
 
     .profile-pic {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
 
     .about-content p {
@@ -326,29 +338,31 @@ body {
         font-size: 0.8em;
     }
 
-    .nav a {
-        font-size: 0.8em;
-        padding: 4px 8px;
+    .hero-content h1 {
+        font-size: 3rem;
     }
 
-    .section {
-        padding: 20px 5px;
+    .hero-content p {
+        font-size: 0.9rem;
     }
 
     .project img {
         height: 120px;
     }
 
+    .project {
+        max-width: 100%;
+    }
+
     .profile-pic {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
 
     .about-content p {
         font-size: 0.8em;
     }
 }
-
     </style>
 </head>
 
@@ -361,10 +375,10 @@ body {
     </div>
 
     <header class="hero">
-    <div class="hero-content">
-        <h1>Hello.<br> I am <br> <span class="highlight">Thiago</span></h1>
-        <p>Software Engineer</p>
-    </div>
+        <div class="hero-content">
+            <h1>Hello.<br> I am <br> <span class="highlight">Thiago</span></h1>
+            <p>Software Engineer</p>
+        </div>
     </header>
 
     <section id="projects" class="section">
@@ -396,7 +410,8 @@ body {
             <img src="minha-foto.png" alt="Thiago Peixoto" class="profile-pic">
             <p style="font-size: 1.2em;">
                 Hello, my name is Thiago and I'm 23 years old. I'm a full stack developer working with Java, Spring,
-                JavaScript, React, and Angular. I'm studying Information Systems at UniFOA and I'm currently in my sixth semester.
+                JavaScript, React, and Angular. I'm studying Information Systems at UniFOA and I'm currently in my sixth
+                semester.
                 I enjoy developing projects in my spare time and also spending time with family and friends.
                 I hope you like my site! Thanks for your time 💙
             </p>
@@ -416,7 +431,7 @@ body {
     </section>
 
     <section id="skills" class="section">
-        <h2 style="font-size: 3em;" >Skills</h2>
+        <h2 style="font-size: 3em;">Skills</h2>
         <div class="skills-grid">
             <div class="skill-card">
                 <img src="java.png" alt="icon by Icons8">
