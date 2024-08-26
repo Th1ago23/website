@@ -284,6 +284,92 @@ body {
     transform: translateY(-5px);
 }
 
+.experiences-container {
+    padding: 40px 20px;
+    background-color: rgba(18, 18, 18, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.experience {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #222222;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.experience:hover {
+    transform: translateY(-5px);
+}
+
+.experience h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.experience span {
+    display: block;
+    font-size: 1.2rem;
+    color: #bbbbbb;
+    margin-bottom: 15px;
+}
+
+.experience p {
+    font-size: 1rem;
+    color: #dddddd;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .experiences-container {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .experience h3 {
+        font-size: 1.5rem;
+    }
+
+    .experience span, .experience p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .experience h3 {
+        font-size: 1.2rem;
+    }
+
+    .experience span, .experience p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
 /* Responsividade */
 @media (max-width: 768px) {
     .hero-content h1 {
@@ -377,7 +463,7 @@ body {
     <header class="hero">
         <div class="hero-content">
             <h1>Hello.<br> I am <br> <span class="highlight">Thiago</span></h1>
-            <p>Software Engineer</p>
+            <p>FullStack Developer</p>
         </div>
     </header>
 
@@ -394,7 +480,7 @@ body {
             </div>
             <div class="project">
                 <img src="projeto2.png" alt="Projeto 2">
-                <a href="https://github.com/Th1ago23/UserLoginRegister">UserRegisterLogin</a>
+                <a href="https://github.com/Th1ago23/FullStackProject">UserRegisterLogin</a>
                 <div class="project-description">
                     <h1>Java & Spring & React</h1>This full stack project implements a user authentication system,
                     developed in Java using Spring on the backend and React on the frontend. The application allows
@@ -472,22 +558,31 @@ body {
         </div>
     </section>
 
-
-
-    <section id="Experiences" class="section">
-        <h2 style="font-size: 3em;">Experiences</h2>
-        <div class="nav">
-            <a style="text-align:left ;">
-                <h3>It Trainee</h3>. Automation development with VB<br>
-                . Menu creation using Power Query<br>
-                . ETL and data integration<br>
-                . Development of solutions and optimization to improve daily reports<br>
-                . Quality control for monitoring targets<br>
-                . Constant communication with managers<br>
-            </a>
+    <section id="experience" class="section experiences-container">
+        <h2 class="section-title">Experiences</h2>
+    
+        <div class="experience">
+            <h3>IT Trainee at CSN</h3>
+            <span>May 2024 - Present | Volta Redonda, Brazil</span>
+            <p>
+                I developed automations with VB to improve and expand the team's day-to-day production margin.
+                I was able to help increase the production of activities by 20% by automating spreadsheets and controls within the financial system.
+                I was part of a day-to-day agile methodology (Scrum) as well as daily meetings and cooperation in improving the team's reports.
+            </p>
         </div>
-        <p></p>
+    
+        <div class="experience">
+            <h3>Freelancer</h3>
+            <span>February 2022 - May 2024</span>
+            <p>
+                I developed APIS RESTFul with Java and Spring for user registration and also a management system for a dental practice, with Insomnia as an endpoint and request tester, I used MySQL to store the information sent by the API, Azure to host the system and React and JavaScript to make the FrontEnd of this application.
+                I developed a Mobile APP with React Native and NodeJS to manage personal expenses and also to register products using ExpoGo.
+                I developed this personal portfolio site to showcase my projects and also my experiences.
+        </div>
+
     </section>
+    
+
 </body>
 
 </html>
