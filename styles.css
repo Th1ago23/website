@@ -1,0 +1,569 @@
+        /* Estilos globais */
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            background-color: #121212;
+            background-image: url('fundo.png');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        /* Container do Hero */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        /* Conteúdo do Hero */
+        .hero-content {
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Tamanho do título */
+        .hero-content h1 {
+            font-size: 6rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+        
+        /* Tamanho do parágrafo */
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Estilo do botão */
+        .hero-content .cta {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #ffffff;
+            background-color: #1844bd;
+            border-radius: 25px;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, transform 0.3s;
+        }
+        
+        /* Efeito hover do botão */
+        .hero-content .cta:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Estilos de redes sociais */
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px 0;
+            background: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            flex-wrap: wrap;
+        }
+        
+        /* Links das redes sociais */
+        .social a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 5px 10px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #1844bd, #1844bd);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s;
+        }
+        
+        /* Efeito hover dos links sociais */
+        .social a:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Container do nome e posição */
+        .container {
+            text-align: center;
+            position: relative;
+            padding: 60px 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Nome */
+        .name {
+            font-size: 2.5em;
+            margin: 0;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        
+        /* Posição */
+        .position {
+            font-size: 1em;
+            color: #bbbbbb;
+            margin: 10px 0 20px;
+        }
+        
+        /* Navegação */
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        
+        /* Links de navegação */
+        .nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.9em;
+            padding: 8px 12px;
+            border-radius: 25px;
+            background: linear-gradient(135deg, #1844bd, #1844bd);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, transform 0.3s;
+        }
+        
+        /* Efeito hover dos links de navegação */
+        .nav a:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Seções */
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+        
+        .contact-section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro */
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+        
+        .contact-section h1 {
+            color: #ffffff; /* Cor do texto do título */
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: center; /* Centraliza os itens */
+            gap: 20px; /* Espaçamento entre os ícones */
+        }
+        
+        .social-icon {
+            display: flex;
+            flex-direction: column; /* Coloca a imagem e o texto em coluna */
+            align-items: center; /* Alinha horizontalmente no centro */
+            padding: 15px; /* Espaçamento interno */
+            border-radius: 8px; /* Bordas arredondadas */
+            background-color: #333333; /* Fundo cinza */
+            text-decoration: none; /* Remove sublinhado do link */
+            color: #ffffff; /* Cor do texto */
+            transition: transform 0.3s, box-shadow 0.3s; /* Efeito de transição */
+            width: 80px; /* Largura do quadrado */
+        }
+        
+        .social-icon:hover {
+            background-color: #444444; /* Fundo um pouco mais claro ao hover */
+            transform: translateY(-3px); /* Levanta o ícone */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Aumenta a sombra ao passar o mouse */
+        }
+        
+        .social-icon img {
+            width: 40px; /* Largura da imagem do ícone */
+            height: 40px; /* Altura da imagem do ícone */
+            object-fit: contain; /* Mantém a proporção da imagem */
+            margin-bottom: 5px; /* Espaçamento abaixo da imagem */
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+            gap: 20px; /* Espaço entre os projetos */
+            justify-content: center; /* Centraliza os projetos horizontalmente */
+        }
+        
+        .project {
+            flex: 1 1 calc(33.333% - 20px); /* Cada projeto ocupa 1/3 da tela menos a margem */
+            max-width: calc(33.333% - 20px); /* Define a largura máxima para evitar esticar demais */
+            background-color: #1c1c1c; /* Cor de fundo */
+            border-radius: 10px; /* Arredonda os cantos dos cards */
+            overflow: hidden; /* Garante que o conteúdo não ultrapasse o card */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave */
+            transition: transform 0.3s ease; /* Transição suave para o hover */
+        }
+        
+        .project:hover {
+            transform: translateY(-10px); /* Elevação do projeto ao passar o mouse */
+        }
+        
+        /* Imagem do projeto */
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        /* Link do projeto */
+        .project a {
+            display: block;
+            padding: 15px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1em;
+            background-color: #1844bd;
+            text-align: center;
+        }
+        
+        /* Ícones de tecnologia */
+        .tech-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px 0;
+        }
+        
+        .tech-icon img {
+            width: 30px;
+            height: 30px;
+        }
+        
+        /* Colaboradores */
+        .collaborators {
+            text-align: center; /* Centraliza o texto e o conteúdo */
+        }
+        
+        .collaborators p {
+            margin-bottom: 10px; /* Adiciona um pequeno espaço abaixo do título */
+        }
+        
+        .collaborators ul {
+            display: flex; 
+            gap: 5px; 
+            list-style-type: none; 
+            padding: 0; 
+            margin: 0 auto; /* Centraliza horizontalmente */
+            justify-content: center; /* Alinha os itens da lista ao centro */
+        }
+        
+        .collaborators li {
+            padding: 3px 6px; 
+            border-radius: 5px; 
+            transition: background-color 0.3s; 
+            font-size: 0.8em;
+        }
+        
+        .collaborators li:hover {
+            background-color: #1844bd; 
+        }
+        
+        .collaborators a {
+            color: #ffffff; 
+            text-decoration: none; 
+            padding: 5px 10px; 
+            border: none; 
+            background: none; 
+            border-radius: 5px; 
+            display: block; 
+            transition: background-color 0.3s; 
+        }
+        /* Sobre mim */
+        .about-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            justify-content: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        /* Foto de perfil */
+        .profile-pic {
+            width: 150px;
+            /* Ajuste o tamanho da foto conforme necessário */
+            height: auto;
+            /* Mantém a proporção da imagem */
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Parágrafos sobre mim */
+        .about-content p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #dddddd;
+            text-align: justify;
+            /* Justifica o texto */
+            max-width: 800px;
+            /* Ajuste a largura máxima conforme necessário */
+        }
+        
+        /* Grid de habilidades */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            /* Permite que os itens se movam para a linha seguinte, se necessário */
+            justify-content: center;
+            /* Alinha os itens horizontalmente no centro */
+            gap: 20px;
+            /* Espaçamento entre os itens */
+            max-width: 1000px;
+            margin: 0 auto;
+            transition: transform 0.3s;
+        }
+        
+        /* Cartão de habilidades */
+        .skill-card {
+            background-color: #222222;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s, transform 0.3s;
+            color: #ffffff;
+            font-size: auto;
+            width: 150px;
+            /* Define uma largura fixa para os itens */
+            height: 150px;
+            /* Define uma altura fixa para os itens para manter a forma quadrada */
+            display: flex;
+            /* Para alinhar o conteúdo internamente */
+            flex-direction: column;
+            /* Alinha o conteúdo verticalmente */
+            justify-content: center;
+            /* Alinha o conteúdo horizontalmente no centro */
+            align-items: center;
+            /* Alinha o conteúdo verticalmente no centro */
+        }
+        
+        /* Estilo do hover para cartões */
+        .skill-card:hover {
+            background-color: #1844bd;
+            transform: translateY(-5px);
+        }
+        
+        .experiences-container {
+            padding: 40px 20px;
+            background-color: rgba(18, 18, 18, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #ffffff;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .experience {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #222222;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+        
+        .experience:hover {
+            transform: translateY(-5px);
+        }
+        
+        .experience h3 {
+            font-size: 1.8rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .experience span {
+            display: block;
+            font-size: 1.2rem;
+            color: #bbbbbb;
+            margin-bottom: 15px;
+        }
+        
+        .experience p {
+            font-size: 1rem;
+            color: #dddddd;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .tech-icons {
+            display: flex;
+            gap: 10px; /* Espaçamento entre os ícones */
+            justify-content: center; /* Centraliza os ícones horizontalmente */
+            margin: 10px 0; /* Espaçamento acima e abaixo */
+        }
+        
+        .tech-icon {
+            background-color: #222222; /* Cor de fundo do ícone */
+            padding: 10px; /* Espaçamento interno */
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra do ícone */
+            width: 40px; /* Largura do ícone */
+            height: 40px; /* Altura do ícone */
+            display: flex; /* Para alinhar o conteúdo internamente */
+            justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
+            align-items: center; /* Alinha o conteúdo verticalmente no centro */
+        }
+        
+        .tech-icon img {
+            width: 25px; /* Largura da imagem do ícone */
+            height: 25px; /* Altura da imagem do ícone */
+            object-fit: contain; /* Mantém a proporção da imagem */
+        }
+        .footer {
+            background-color: #1c1c1c; /* Cor de fundo */
+            color: #ffffff; /* Cor do texto */
+            padding: 20px 0; /* Espaçamento interno */
+            text-align: center; /* Centraliza o texto */
+            margin-top: 40px; /* Espaço acima do rodapé */
+            width: 100%; /* Largura total */
+        }
+        
+        .footer-content {
+            max-width: 1200px; /* Largura máxima */
+            margin: 0 auto; /* Centraliza horizontalmente */
+        }
+        
+        .footer p {
+            margin: 0; /* Remove a margem padrão do parágrafo */
+            font-size: 1em; /* Tamanho da fonte */
+        }
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .experiences-container {
+                padding: 20px;
+            }
+        
+            .section-title {
+                font-size: 2rem;
+            }
+        
+            .experience h3 {
+                font-size: 1.5rem;
+            }
+        
+            .experience span, .experience p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .section-title {
+                font-size: 1.8rem;
+            }
+        
+            .experience h3 {
+                font-size: 1.2rem;
+            }
+        
+            .experience span, .experience p {
+                font-size: 0.9rem;
+            }
+        }
+        
+        
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 4rem;
+            }
+        
+            .hero-content p {
+                font-size: 1rem;
+            }
+        
+            .name {
+                font-size: 2em;
+            }
+        
+            .position {
+                font-size: 0.9em;
+            }
+        
+            .nav a {
+                font-size: 0.9em;
+                padding: 6px 10px;
+            }
+        
+            .section {
+                padding: 30px 10px;
+            }
+        
+            .project img {
+                height: 150px;
+            }
+        
+            .project {
+                max-width: 100%;
+            }
+        
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+            }
+        
+            .about-content p {
+                font-size: 0.9em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .name {
+                font-size: 1.8em;
+            }
+        
+            .position {
+                font-size: 0.8em;
+            }
+        
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+        
+            .hero-content p {
+                font-size: 0.9rem;
+            }
+        
+            .project img {
+                height: 120px;
+            }
+        
+            .project {
+                max-width: 100%;
+            }
+        
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+            }
+        
+            .about-content p {
+                font-size: 0.8em;
+            }
+
+        }
