@@ -35,7 +35,17 @@ function toggleLanguage() {
         document.querySelector("#experience h2").textContent = "Experiências";
         document.querySelector("#experience h3").textContent = "Estagiário de TI na CSN";
         document.querySelector(".experience span").textContent = "Maio 2024 - Presente | Volta Redonda, Brasil";
-        document.querySelector(".experience p").textContent = "Desenvolvi automações com VB para melhorar e expandir a margem de produção do dia a dia da equipe. Consegui ajudar a aumentar a produção das atividades em 20% ao automatizar planilhas e controles dentro do sistema financeiro. Fui parte da metodologia ágil do dia a dia (Scrum), bem como reuniões diárias e cooperação na melhoria dos relatórios da equipe.";
+        document.querySelector(".experience p").innerHTML = `
+            - Desenvolvi automações com SAP, otimizando a rotina de segunda, quarta e sexta-feira, o que reduziu em 2 horas o tempo de análise para conferência de valores.<br>
+            - Criei automações no Excel utilizando VBA para calcular o saldo mensal de projetos, reduzindo significativamente os erros de análise da equipe.<br>
+            - Minha experiência inclui a análise de projetos com CAPEX e OPEX, automação do envio de relatórios diários para aprovação do diretor com VBA, economizando mais de 8 horas semanais.<br>
+            - Além disso, ministrei treinamento de inteligência artificial para a equipe, visando trazer melhorias e automações para a rotina.<br>
+            - Elaborei planilhas de controle de projetos para aumentar a supervisão sobre as tarefas diárias e desenvolvi dashboards em Qlik Sense para migrar o dashboard de CAPEX do Power BI.<br>
+            - Minha análise de dados em projetos avaliou status, CAPEX disponível, duração do projeto e requisitos de eventos.<br>
+            - Participei de eventos de capacitação em metodologias e tecnologias para aprimorar as habilidades analíticas dos colaboradores em cibersegurança, ministrados pela Fortinet e Rockwell.<br>
+            - Verifiquei requisições de compras diárias e enviei relatórios para aprovação do diretor, identifiquei melhorias no sistema financeiro responsável por monitorar todos os projetos da usina, e atualizei controles de projetos e prazos para envio ao planejador.<br>
+            - Minhas responsabilidades também incluíram ajustes em hardwares e análise de itens de pagamentos compromissados para projetos em andamento.
+        `;
         document.querySelector(".footer-content p").textContent = "© 2024 Thiago Peixoto dos Santos. Todos os direitos reservados.";
         document.querySelector("#language-toggle").textContent = "English";
     } else {
@@ -72,7 +82,17 @@ function toggleLanguage() {
         document.querySelector("#experience h2").textContent = "Experiences";
         document.querySelector("#experience h3").textContent = "IT Trainee at CSN";
         document.querySelector(".experience span").textContent = "May 2024 - Present | Volta Redonda, Brazil";
-        document.querySelector(".experience p").textContent = "I developed automations with VB to improve and expand the team's day-to-day production margin. I was able to help increase the production of activities by 20% by automating spreadsheets and controls within the financial system. I was part of a day-to-day agile methodology (Scrum) as well as daily meetings and cooperation in improving the team's reports.";
+        document.querySelector(".experience p").innerHTML = `
+            - I developed automations with SAP, optimizing the routine on Mondays, Wednesdays, and Fridays, which reduced analysis time by 2 hours for value verification.<br>
+            - I created Excel automations using VBA to calculate monthly project balances, significantly reducing analysis errors within the team.<br>
+            - My experience includes analyzing CAPEX and OPEX projects, automating daily report submissions for director approval with VBA, saving over 8 hours weekly.<br>
+            - Additionally, I conducted artificial intelligence training for the team to introduce improvements and automations into their workflow.<br>
+            - I designed project control spreadsheets to enhance oversight of daily projects and tasks and developed dashboards in Qlik Sense to migrate the CAPEX dashboard from Power BI.<br>
+            - My data analysis on projects assessed status, available CAPEX, project duration, and event requirements.<br>
+            - I participated in training events focused on methodologies and technologies to enhance employee analytical skills in cybersecurity, facilitated by Fortinet and Rockwell.<br>
+            - I reviewed daily purchase requests and submitted reports for director approval, identified improvements within the financial system responsible for monitoring all projects at the plant, and updated project controls and timelines for submission to the project planner.<br>
+            - My responsibilities also included making hardware adjustments and analyzing committed payment items for ongoing projects.
+        `;
         document.querySelector(".footer-content p").textContent = "© 2024 Thiago Peixoto dos Santos. All rights reserved.";
         document.querySelector("#language-toggle").textContent = "Português";
     }
