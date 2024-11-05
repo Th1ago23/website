@@ -17,7 +17,12 @@ function toggleLanguage() {
         document.querySelector("#projects h2").textContent = "Meus Projetos";
         document.querySelector("#about-me h2").textContent = "Sobre Mim";
         document.querySelector("#about-me p").textContent = "Olá, meu nome é Thiago e tenho 23 anos. Sou um desenvolvedor full stack que trabalha com Java, Spring, JavaScript, React e Angular. Estou cursando Sistemas de Informação na UniFOA e atualmente estou no sexto semestre. Gosto de desenvolver projetos no meu tempo livre e também de passar tempo com a família e amigos. Espero que goste do meu site! Obrigado pelo seu tempo 💙";
-        
+        document.querySelector(".collaborators p").textContent = "Colaboradores:";
+        document.querySelector(".collaborators ul").innerHTML = `
+            <li><a href="https://www.linkedin.com/in/maike-castilho-5161191b1/">Maike Castilho</a></li>
+            <li><a href="https://www.linkedin.com/in/ronald-luigi-galv%C3%A3o-b310a9235/">Ronald Galvão</a></li>
+            <li><a href="https://www.linkedin.com/in/pablo-pereiraa/">Pablo Pereira</a></li>
+        `;
         // **Aqui estão as adições para a seção de contato**
         document.querySelector("#contact h1").textContent = "Contato";
         const socialIcons = document.querySelectorAll(".social-icon p");
@@ -49,7 +54,12 @@ function toggleLanguage() {
         document.querySelector("#projects h2").textContent = "My Projects";
         document.querySelector("#about-me h2").textContent = "About Me";
         document.querySelector("#about-me p").textContent = "Hello, my name is Thiago and I'm 23 years old. I'm a full stack developer working with Java, Spring, JavaScript, React, and Angular. I'm studying Information Systems at UniFOA and I'm currently in my sixth semester. I enjoy developing projects in my spare time and also spending time with family and friends. I hope you like my site! Thanks for your time 💙";
-        
+        document.querySelector(".collaborators p").textContent = "Collaborators:";
+        document.querySelector(".collaborators ul").innerHTML = `
+            <li><a href="https://www.linkedin.com/in/maike-castilho-5161191b1/">Maike Castilho</a></li>
+            <li><a href="https://www.linkedin.com/in/ronald-luigi-galv%C3%A3o-b310a9235/">Ronald Galvão</a></li>
+            <li><a href="https://www.linkedin.com/in/pablo-pereiraa/">Pablo Pereira</a></li>
+        `;
         // **Aqui estão as adições para a seção de contato**
         document.querySelector("#contact h1").textContent = "Contact";
         const socialIcons = document.querySelectorAll(".social-icon p");
